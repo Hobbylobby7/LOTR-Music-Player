@@ -469,7 +469,7 @@
         function loginSpotify() {
             const authUrl = `https://accounts.spotify.com/authorize?` +
                 `client_id=${CLIENT_ID}&` +
-                `response_type=token&` +
+                `response_type=code&` +
                 `redirect_uri=${encodeURIComponent(REDIRECT_URI)}&` +
                 `scope=${encodeURIComponent(SCOPES)}`;
             
@@ -618,4 +618,5 @@
         console.log('Client ID configured:', CLIENT_ID);
     </script>
 </body>
+
 </html>
